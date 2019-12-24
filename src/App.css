@@ -1,0 +1,188 @@
+/* really should have used sass for this. I just got out of the habit since I started writing on codepen. */
+*{
+  margin:0;
+  padding:0;
+  color:rgb(233, 222, 222);
+  font-size:1.4rem;
+}
+
+#container{
+  position:relative;
+  background:#130f40;
+  width:35em;
+  height:42em;
+  margin:1.5em auto 0em auto;
+}
+
+#calculator{
+  position:absolute;
+  background-color:grey;
+  width:30em;
+  height:40em;
+  top:1em;
+  left:2.5em;
+
+  display:grid;
+  grid-template-columns:1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+
+  grid-template-areas:
+  "full-operation full-operation full-operation full-operation"
+  "current-input current-input current-input current-input"
+  "plus minus clear clear"
+  "multiplication divide clear clear"
+  "one two three equals"
+  "four five six equals"
+  "seven eight nine equals"
+  "zero zero decimal equals";
+ 
+}
+
+#full-operation{
+  width:100%;
+  height:100%;
+  background:#130f40;
+  text-align:right;
+  
+
+  grid-area:full-operation;
+}
+
+#display{
+  width:100%;
+  height:100%;
+  background:#130f40;
+  text-align:right;
+
+  grid-area:current-input;
+}
+
+/* CLICKABLE ELEMENTS */
+
+
+.clickable:hover{
+  border:2px solid #130f40 !important;
+  transform:scale(1.02);
+}
+
+#add{
+  width:100%;
+  height:100%;
+  background:#3c2fca;
+
+  grid-area:plus;
+}
+#subtract{
+  width:100%;
+  height:100%;
+  background:#3c2fca;
+
+  grid-area:minus;
+}
+#multiply{
+  width:100%;
+  height:100%;
+  background:#3c2fca;
+
+  grid-area:multiplication;
+}
+#divide{
+  width:100%;
+  height:100%;
+  background:#3c2fca;
+
+  grid-area:divide;
+}
+#clear{
+  width:100%;
+  height:100%;
+  background:#eb4d4b;
+
+
+  grid-area:clear;
+}
+
+#one{
+  width:100%;
+  height:100%;
+  background:#bab5ee;
+
+  grid-area:one;
+}
+#two{
+  width:100%;
+  height:100%;
+  background:#bab5ee;
+
+  grid-area:two;
+}
+#three{
+  width:100%;
+  height:100%;
+  background:#bab5ee;
+
+  grid-area:three;
+}
+#four{
+  width:100%;
+  height:100%;
+  background:#bab5ee;
+
+  grid-area:four;
+}
+#five{
+  width:100%;
+  height:100%;
+  background:#bab5ee;
+
+  grid-area:five;
+}
+#six{
+  width:100%;
+  height:100%;
+  background:#bab5ee;
+
+  grid-area:six;
+}
+#seven{
+  width:100%;
+  height:100%;
+  background:#bab5ee;
+
+  grid-area:seven;
+}
+#eight{
+  width:100%;
+  height:100%;
+  background:#bab5ee;
+
+  grid-area:eight;
+}
+#nine{
+  width:100%;
+  height:100%;
+  background:#bab5ee;
+
+  grid-area:nine;
+}
+#zero{
+  width:100%;
+  height:100%;
+  background:#bab5ee;
+
+  grid-area:zero;
+}
+#decimal{
+  width:100%;
+  height:100%;
+  background:#bab5ee;
+
+  grid-area:decimal;
+}
+#equals{
+  width:100%;
+  height:100%;
+  background:#6ab04c;
+
+  grid-area:equals;
+}
